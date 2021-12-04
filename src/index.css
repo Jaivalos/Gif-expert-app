@@ -14,6 +14,7 @@ input{
   width: 100%;
 }
 
+
 .card-grid{
   display: flex;
   flex-direction: row;
@@ -21,13 +22,14 @@ input{
 }
 
 .card{
+
   background-color: rgb(233, 69, 40);
   padding: 2%;
   align-content: center;
   border: 1px solid white;
   border-radius: 6px;
   overflow: hidden;
-  margin: 10px;
+  margin: 10PX auto;
 }
 
 .card p{
@@ -38,5 +40,5 @@ input{
 }
 
 .card img{
-  max-height: 180px;
+  max-height: 600px;
 }

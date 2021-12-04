@@ -2,19 +2,14 @@ import React, {useState} from 'react';
 import { AddCategory } from './AddCategory';
 
 export const GifExpertApp = () =>{
-    // const cat = ['Guard', 'Shooting guard', 'Center'];
 
-    const [cat, setCategories] = useState(['Guard', 'Shooting guard', 'Center'])
-
-    // const handleAdd = () =>{
-    //     setCategories([...cat, 'Forward']);
-    // }
+    const [cat, setCat] = useState(['Guard', 'Shooting guard', 'Center'])
 
     return(
         <div>
             <header>
                 <h2 className="title">GifExpertApp</h2>
-                <AddCategory />
+                <AddCategory setCat = {setCat} />
                 <hr />
             </header>
 
@@ -29,3 +24,4 @@ export const GifExpertApp = () =>{
         </div>
     );
 }
+

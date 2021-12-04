@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 
 export const GifGrid = ( {cat} ) => {
 
-    const [cont, setcont] = useState(0)
+    const [img, setimg] = useState([])
 
     useEffect( () => {
         getGif();
@@ -22,14 +22,20 @@ export const GifGrid = ( {cat} ) => {
         })
 
         console.log(gifs);
+        setimg(gifs);
 
     }
 
     return (
         <>
             <h3>{cat}</h3>
-            <h3>{cont}</h3>
-            <button onClick={ ()=> setcont(cont + 1) }></button>
+            <ol>
+                {
+                    img.map( ({id, title}) =>{
+                        return <li key = {id}> {title} </li>
+                    } )
+                }
+            </ol>
         </>
     )
 }

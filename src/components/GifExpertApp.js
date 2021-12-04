@@ -4,7 +4,7 @@ import { GifGrid } from './GifGrid';
 
 export const GifExpertApp = () =>{
 
-    const [cat, setCat] = useState(['Guard'])
+    const [cat, setCat] = useState(['Michael Jordan'])
 
     return(
         <div>

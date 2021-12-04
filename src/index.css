@@ -1,19 +1,42 @@
 *{
-  background-color: rgb(47, 38, 70);
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: rgb(43, 51, 128);
   color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.title{
-  padding: 2% 10%;
-  text-align: center;
+body{
+  padding: 2% 6%;
 }
 
 input{
-  width: 90%;
-  background-color: rgb(150, 182, 240);
-  color: rgb(0, 0, 0);
-  padding: 1%;
+  background-color: white;
   font-size: 1.2rem;
+  width: 100%;
 }
 
+.card-grid{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  background-color: rgb(233, 69, 40);
+  padding: 2%;
+  align-content: center;
+  border: 1px solid white;
+  border-radius: 6px;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.card p{
+  font-size: 1.1rem;
+  background-color: rgb(233, 69, 40);
+  padding: 1%;
+  text-align: center;
+}
+
+.card img{
+  max-height: 180px;
+}

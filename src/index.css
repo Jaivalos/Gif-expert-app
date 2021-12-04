@@ -4,14 +4,16 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-header{
-  padding: 5% 10%;
+.title{
+  padding: 2% 10%;
   text-align: center;
 }
 
-button{
-  background-color: rgb(255, 255, 255);
-  color: black;
-  padding: 1% 5%;
-  font-size: 1rem;
+input{
+  width: 90%;
+  background-color: rgb(150, 182, 240);
+  color: rgb(0, 0, 0);
+  padding: 1%;
+  font-size: 1.2rem;
 }
+

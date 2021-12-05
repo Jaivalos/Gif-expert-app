@@ -14,8 +14,8 @@ export const GifExpertApp = () =>{
                 <hr />
             </header>
 
-            <ol>
-                {
+            <section>
+                {   
                     cat.map( (category) =>
                         <GifGrid 
                             key = {category}
@@ -23,7 +23,7 @@ export const GifExpertApp = () =>{
                         />
                     )
                 }
-            </ol>
+            </section>
 
         </div>
     );

@@ -9,6 +9,7 @@ body{
 }
 
 input{
+  color: black;
   background-color: white;
   font-size: 1.2rem;
   width: 100%;
@@ -22,7 +23,6 @@ input{
 }
 
 .card{
-
   background-color: rgb(233, 69, 40);
   padding: 2%;
   align-content: center;
@@ -41,4 +41,10 @@ input{
 
 .card img{
   max-height: 600px;
+}
+
+@media only screen and (max-width: 600px) {
+  .card img{
+    max-height: 200px;
+  }
 }
